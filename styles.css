@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     margin: 2vh;
     padding: 5vh;
@@ -265,4 +266,219 @@ a {
 #txtFooter {
     padding-top: 50px;
     text-align: center;
+=======
+body {
+    margin: 2vh;
+    padding: 5vh;
+    box-sizing: border-box;
+    background: rgb(0, 0, 14);
+    font-family: "Google Sans Flex", sans-serif;
+    color: White;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 450px;
+    padding: 14px 28px;
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    z-index: 50;
+}
+
+.title {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+    color: rgb(92, 165, 23);
+}
+
+#menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu-link {
+    font-family: "Pixelify Sans", sans-serif;
+    text-decoration: none;
+    color: rgb(0, 0, 14);
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+
+.menu-link::after {
+    content: '';
+    height: 4px;
+    border-radius: 3px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, #995804,#a17b13, #ffbb00);
+    transition: width 0.3s ease-in-out;
+
+}
+
+.menu-link:hover::after {
+    width: 100%;
+    transform: scale(1.2);
+
+}
+
+#photoProfile {
+    
+    border-radius: 50%;
+    position: relative;
+    max-width: 20%;
+    box-shadow: rgba(90, 185, 35, 0.4) 0px 5px, rgba(85, 190, 37, 0.3) 0px 10px, rgba(109, 187, 35, 0.2) 0px 15px, rgba(90, 175, 33, 0.1) 0px 20px, rgba(108, 173, 33, 0.05) 0px 25px;
+}
+
+#start {
+    text-align: start;
+}
+
+#nameProfile {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 75px;
+
+}
+
+#subTitle {
+    font-size: 27px;
+    color: rgb(194, 149, 35)
+}
+
+#aboutContainer {
+    font-size: 25px;
+
+}
+
+.colorTextAbout {
+    color: rgb(92, 165, 23);
+}
+
+#projects {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 50px;
+}
+
+#projectsContainer {
+    display: flex;
+
+
+}
+
+#card {
+    position: relative;
+    left: 0px;
+    background: transparent;
+    border: 1px;
+    border-style: double;
+    border-color: rgb(92, 165, 23);
+    border-radius: 8px;
+}
+
+#card:not(:first-child) {
+    margin-left: -50px;
+
+}
+
+#card:hover {
+    transform: translateY(-20px);
+
+}
+
+#card:hover~#card {
+    left: 50px;
+
+}
+
+#titleCard {
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 25px;
+    padding: 10px;
+
+
+}
+
+#txtCard {
+    font-size: 25px;
+    padding: 10px;
+
+}
+
+.subtitle {
+    position: relative;
+    display: inline-block;
+    padding-left: 5px;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 30px;
+    color: rgb(253, 253, 253);
+}
+
+
+.iconSkills {
+    position: relative;
+    left: 100%;
+    top: 0%;
+    width: 25px;
+    height: 25px;
+    padding-left: 15px;
+    z-index: 1;
+    color: rgb(194, 35, 35)
+}
+
+.txtSkills {
+    font-size: 20px;
+}
+
+#contactContainer {}
+
+a {
+    text-decoration: none;
+}
+
+.iconContact{
+    padding: 15px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.iconContact:hover {
+    transform: scale(1.2);
+}
+
+#iconGithub{
+    color: rgb(51, 165, 23);
+}
+
+#iconLinked{
+    color: rgb(38, 121, 17);
+}
+
+#iconEmail{
+    color: rgb(30, 99, 13);
+}
+
+#txtFooter {
+    padding-top: 50px;
+    text-align: center;
+>>>>>>> fedf7a21f9a6a1cd2c745b01736d2749e6f9bc19
 }
