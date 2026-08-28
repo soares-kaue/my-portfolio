@@ -11,6 +11,14 @@ html {
     scroll-behavior: smooth;
 }
 
+:root{
+    --primary: #5ca517;
+    --secundary: #e78b00;
+    --tertiary: #0039f5;
+    color: #f7de00;
+
+}
+
 #navbar {
     position: relative;
     top: 10px;
@@ -31,7 +39,7 @@ html {
 .title {
     font-family: "Pixelify Sans", sans-serif;
     font-size: 50px;
-    color: rgb(92, 165, 23);
+    color: var(--primary);
 }
 
 #menu {
@@ -92,7 +100,7 @@ html {
 
 #subTitle {
     font-size: 27px;
-    color: rgb(194, 149, 35)
+    color: var(--secundary)
 }
 
 #aboutContainer {
@@ -101,7 +109,7 @@ html {
 }
 
 .colorTextAbout {
-    color: rgb(92, 165, 23);
+    color: var(--primary);
 }
 
 #projects {
@@ -111,7 +119,7 @@ html {
 
 #projectsContainer {
     display: flex;
-
+    gap: 20px;
 
 }
 
@@ -119,33 +127,79 @@ html {
     position: relative;
     left: 0px;
     background: transparent;
-    border: 1px;
-    border-style: double;
-    border-color: rgb(92, 165, 23);
-    border-radius: 8px;
+    border: 1px solid;
+    border-color: rgb(67, 122, 15);
+    border-radius: 15px;
+    padding: 20px 60px 20px 20px;
+    
 }
 
-#card:not(:first-child) {
-    margin-left: -50px;
-
-}
 
 #card:hover {
-    transform: translateY(-20px);
-
+    
+    border-color: rgb(117, 255, 4);
 }
 
-#card:hover~#card {
-    left: 50px;
+.codeIcon {
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+    justify-content: center;
 
 }
 
 #titleCard {
     font-family: "Pixelify Sans", sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     padding: 10px;
+    text-align: start;
 
+}
 
+.subtitleCard {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 10px 30px 10px;
+    color: var(--secundary)
+}
+
+.projectTxtBlock {
+    position: relative;
+}
+
+.blockProject {
+    display: flex;
+    position: relative;
+    padding-left: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    
+}
+
+.blockProject2 {
+    display: flex;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 20px;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+.projectTxt {
+    transform: translateY(-70%);
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.projectLink {
+    display: flex;
+    padding-left: 15px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    color: var(--tertiary);
+    font-weight: 600;
+}
+
+.projectLink:hover {
+    text-decoration: underline;
 }
 
 #txtCard {
